@@ -55,8 +55,10 @@
       <artifactId>kafka-avro-serializer</artifactId>
       <version>6.1.1</version>
       <exclusions>
-        <groupId>jakarta.ws.rs</groupId>
-        <artifactId>jakarta.ws.rs-api</artifactId>
+        <exclusion>
+          <groupId>jakarta.ws.rs</groupId>
+          <artifactId>jakarta.ws.rs-api</artifactId>
+        </exclusion>
       </exclusions>
     </dependency>
 
